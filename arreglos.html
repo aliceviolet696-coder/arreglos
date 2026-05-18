@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos de Edades</title>
+    <link rel="stylesheet" href="arreglos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <h1>Gestión de Arreglos de Edades</h1>
+
+        <!-- FORMULARIO -->
+        <section class="formulario">
+            <input type="number" id="edad" placeholder="Ingrese una edad">
+            <button onclick="agregarEdad()">Agregar</button>
+        </section>
+
+        <!-- TABLAS -->
+        <section class="tablas">
+
+            <!-- IZQUIERDA -->
+            <div class="tabla-contenedor">
+                <h2>Arreglo Izquierdo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Valor</th>
+                            <th>Eliminar</th>
+                            <th>Mover</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaIzquierda">
+                        <!-- Se llena dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- DERECHA -->
+            <div class="tabla-contenedor">
+                <h2>Arreglo Derecho</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mover</th>
+                            <th>Valor</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaDerecha">
+                        <!-- Se llena dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="arreglos1.js"></script>
+</body>
+
+</html>
